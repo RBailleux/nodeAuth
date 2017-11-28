@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>User interface: homepage</title>
+    </head>
+    <body>
+        <header>
+            <h1>Connexion/Inscription</h1>
+        </header>
+
+        <main>
+            <section id="loginSection">
+                <form action="/api/login" method="POST">
+                    <input type="email" name="loginEmail" placeholder="Votre email">
+                    <input type="password" name="loginPassword" placeholder="Votre mot de passe">
+                    <button type="submit">Connexion</button>
+                </form>
+            </section>
+            
+            <section id="registerSection">
+                <form action="/api/register" method="POST">
+                    <input type="text" name="registerFirstname" placeholder="Votre prénom">
+                    <input type="text" name="registerLastname" placeholder="Votre nom">
+                    <input type="email" name="registerEmail" placeholder="Votre email">
+                    <input type="password" name="registerPassword" placeholder="Votre mot de passe">
+                    <input type="password" name="registerPasswordSecure" placeholder="Répétez votre mot de passe">
+                    <button type="submit">Inscription</button>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            
+        </footer>
+    </body>
+</html>
